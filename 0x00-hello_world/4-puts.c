@@ -2,7 +2,7 @@
 
 /**
  	* main - this is the main put function
- 	:wq* Return: 0
+ 	* Return: 0
  */
 int main(void)
 {
