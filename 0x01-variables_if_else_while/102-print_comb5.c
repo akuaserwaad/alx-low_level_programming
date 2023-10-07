@@ -1,39 +1,35 @@
-#include<stdio.h>
+#include <stdio.h>
 /**
- * main - Determines if a number is positive, negative or zero.
+ * main - Prints all possible combinations of two two-digit numbers
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int tens;
-	int ones;
-	int t2;
-	int o2;
+	int first_num = 0, second_num;
 
-	for (tens = '0'; tens <= 9; tens++)
+	while (first_num <= 99)
 	{
-		for (ones = '0'; ones <= '9'; ones++)
+		second_num = first_num;
+		while (second_num <= 99)
 		{
-			for (t2 = tens; t2 <= '9'; t2++)
+			if (second_num != first_num)
 			{
-				for (o2 = ones + 1; o2 <= '9'; o2++)
-				{
-					putchar(tens);
-					putchar(ones);
-					putchar(' ');
-					putchar(t2);
-					putchar(o2);
+				putchar((first_num / 10) + 48);
+				putchar((first_num % 10) + 48);
+				putchar(' ');
+				putchar((second_num / 10) + 48);
+				putchar((second_num % 10) + 48);
 
-					if (!((tens == '9' && ones == '8') && (t2 == '9' && o2 == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				if (first_num != 98 || second_num != 99)
+				{
+					putchar(',');
+					putchar(' ');
 				}
-				o2 = '0';
 			}
+			second_num++;
 		}
+		first_num++;
 	}
 	putchar('\n');
 	return (0);
