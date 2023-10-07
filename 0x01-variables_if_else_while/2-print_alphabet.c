@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- * main- Determines if a number is positive, negative or zero
+ * main- program that prints the alphabet in lowercase
+ * Return: Always 0
  */
 int main(void)
 {
