@@ -1,34 +1,18 @@
-#include <stdio.h>
-
-
-
+#include<stdio.h>
 /**
-* main - program that prints the alphabet in lowercase and upper case
-* Return: Always 0.
-*/
-
-
+ * main - Determines if a number is positive, negative or zero.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-
 {
+	int i;
 
-	char letter;
-
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-
-
+	for (i = 0; i < 10; i++)
 	{
-
-	if (letter != 'e' && letter != 'q')
-
-	putchar(letter);
+		printf("%d", i);
 	}
 
-
-	putchar('\n');
-
-
+	printf("\n");
 	return (0);
-
 }
