@@ -5,7 +5,6 @@
  * @head: head of linked list
  * Return: void
  */
-
 void free_list(list_t *head)
 {
 	list_t *current;
